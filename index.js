@@ -2,7 +2,7 @@ import express from 'express';
 
 const app = new express();
 
-app.get('/students', (req, res) => {
+app.get('/new-readings', (req, res) => {
   const { temprature, humidity } = req.query;
   console.log({ temprature, humidity });
   res.send(
