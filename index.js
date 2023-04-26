@@ -13,4 +13,10 @@ app.get('/new-readings', (req, res) => {
   );
 });
 
+
+app.post('/new-readings', (req, res) => {
+  console.log(req.body);
+  res.send('Sent successfully');
+});
+
 app.listen(process.env.PORT || 3001);
